@@ -1,0 +1,6 @@
+location /static/ {
+    alias /sms-service/static/;
+}
+location /media/ {
+    alias /sms-service/media/;
+}
