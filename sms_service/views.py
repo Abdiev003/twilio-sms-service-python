@@ -28,7 +28,7 @@ class SMSAPIView(APIView):
                 )
 
             message = client.messages.create(
-                messaging_service_sid='MG2377872b955de192fe53b126fe443cef',
+                messaging_service_sid=os.environ['MESSAGING_SERVICE_SID'],
                 body=body,
                 to=to
             )
